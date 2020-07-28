@@ -16,3 +16,12 @@
 
 //Переменные
 $fontfamily: "PT Sans";
+$mw: 880px;
+
+.wrapper{
+	max-width: $mw;
+	margin: 0 auto;
+}
+
+//Стиль header
+@import "_header";

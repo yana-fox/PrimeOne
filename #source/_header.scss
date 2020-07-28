@@ -1,0 +1,110 @@
+header{
+	background-color: #ffffff;
+	padding: 29px 0px 33px 0px;
+}
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 6px;
+	&__link {
+		font-family: AkzidenzGrotesk-BoldCond;
+		color: #000000;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-size: 15px;
+		padding: 1px 0px 0px 0px;
+	}
+}
+.header-top-lang {
+	display: flex;
+	&__item {
+		display: block;
+		font-family: "Bebas Neue";
+		color: #000000;
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 5px 2.5px 2px 4px;
+		margin: 0px 11.5px 0px 0px;
+		&.active{
+			background-color: #000000;
+			color: #ffffff;
+		}
+	}
+}
+.header-bottom {
+	display: flex;
+	align-items: center;
+	margin: -14px 0px 0px 0px;
+	&__column {
+		flex: 0 0 33.333%;
+		// &:last-child{
+		// 	// margin: 0px 0px 0px 15px;
+		// 	display: flex;
+		// 	align-items: flex-end;
+		// }
+	}
+}
+
+.header-bottom-menu-list {
+	display: flex;
+	flex-direction: row;
+	padding: 0px 8px;
+	li{
+		margin: 0px 44.5px 0px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	
+}
+
+.header-bottom-menu {
+	
+	&__link {
+		// display: block;
+		font-family: AkzidenzGrotesk-BoldCond;
+		color: #000000;
+		text-transform: uppercase;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+		
+	}
+	&--right{
+		.header-bottom-menu-list{
+			display: flex;
+			justify-content: flex-end;
+			text-align: right;
+			padding: 0px 3px;
+		}
+		li{
+			margin: 0px 54.5px 0px 0px;
+			&:first-child{
+				margin: 0px 46px 0px 0px;
+			}
+			&:last-child{
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+}
+
+.header-logo {
+	display: block;
+	text-align: center;
+	&__text {
+		display: block;
+		color: #000000;
+		font-family: "Bebas Neue";
+		font-size: 9px;
+		text-transform: uppercase;
+		letter-spacing: 8.6px;
+		padding: 1px 0px 0px 10px;
+	}
+
+	&__image {
+		display: inline-block;
+		margin: 0px -3px 0px 0px;
+		
+	}
+}
