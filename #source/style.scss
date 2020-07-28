@@ -16,11 +16,24 @@
 
 //Переменные
 $fontfamily: "PT Sans";
-$mw: 880px;
+$min-width: 320px;
+$mw: 880;
+$md1: $mw+12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 479.98;
 
 .wrapper{
-	max-width: $mw;
+	max-width: $mw+px;
 	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md2+px){
+		max-width: none;
+		padding: 0 10px;
+	}
 }
 
 //Стиль header
