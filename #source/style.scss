@@ -36,5 +36,80 @@ $md4: 479.98;
 	}
 }
 
+// Forms
+
+.btn{
+	height: 50px;
+	line-height: 54px;
+	padding: 0px 33px;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'Bebas Neue';
+	font-size: 19px;
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	display: inline-block;
+	&--white{
+		background-color: #ffffff;
+		color: #000000;
+	}
+}
 //Стиль header
 @import "_header";
+
+//Стиль для блока Private 
+.private {
+	display: flex;
+	background-color: #000000;
+	
+	&__column {
+		flex: 0 0 50%;
+	}
+
+	&__image {
+		height: 100%;
+	}
+}
+.ibg {
+	background-size: cover;
+	img{display: none;}
+}
+
+.private-body {
+	padding: 75px 0px 75px 61px;
+	&__title {
+		font-family: AkzidenzGrotesk-BoldCond;
+		font-size: 50px;
+		color: #ffffff;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		margin: 0px 0px 23px 0px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 25px;
+		font-family: $fontfamily;
+		color: #ffffff;
+		margin: 0px 0px 51px 0px;
+	}
+}
+.private-body-content{
+	width: 320px;
+}
+.private-body-buttons {
+
+	&__item {
+	}
+
+	&__link {
+		font-family: 'Bebas Neue';
+		font-size: 19px;
+		letter-spacing: 1.9px;
+		text-decoration: underline;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 0px 0px 0px 12px;
+	}
+}
+

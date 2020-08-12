@@ -102,6 +102,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.btn {
+  height: 50px;
+  line-height: 54px;
+  padding: 0px 33px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Bebas Neue';
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  display: inline-block;
+}
+
+.btn--white {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 header {
   background-color: #ffffff;
   padding: 29px 0px 33px 0px;
@@ -120,7 +138,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 0px 0px 0px;
+  padding: 15px 6px 0px 6px;
 }
 
 .header-top__link {
@@ -394,4 +412,64 @@ header {
             transform: rotate(45deg);
     bottom: 8px;
   }
+}
+
+.private {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+}
+
+.private__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.private__image {
+  height: 100%;
+}
+
+.ibg {
+  background-size: cover;
+}
+
+.ibg img {
+  display: none;
+}
+
+.private-body {
+  padding: 75px 0px 75px 61px;
+}
+
+.private-body__title {
+  font-family: AkzidenzGrotesk-BoldCond;
+  font-size: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0px 0px 23px 0px;
+}
+
+.private-body__text {
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "PT Sans";
+  color: #ffffff;
+  margin: 0px 0px 51px 0px;
+}
+
+.private-body-content {
+  width: 320px;
+}
+
+.private-body-buttons__link {
+  font-family: 'Bebas Neue';
+  font-size: 19px;
+  letter-spacing: 1.9px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 0px 0px 12px;
 }
