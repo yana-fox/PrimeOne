@@ -8,8 +8,8 @@ header{
 .header-top {
 	display: flex;
 	justify-content: space-between;
-	// padding: 0px 6px;
-	padding: 15px 6px 0px 6px;
+	padding: 0px 6px;
+	// padding: 25px 6px 0px 6px;
 	&__link {
 		font-family: AkzidenzGrotesk-BoldCond;
 		color: #000000;
@@ -25,6 +25,10 @@ header{
 	}
 	@media (max-width: $md2+px){
 		justify-content: flex-end;
+		padding: 25px 6px 0px 6px;
+	}
+	@media (max-width: $md4+px){
+		padding: 15px 6px 0px 6px;
 	}
 }
 .header-top-lang {
@@ -55,6 +59,9 @@ header{
 		flex: 0 0 33.333%;
 	}
 	@media (max-width: $md2+px){
+		margin: -37px 0px 0px 0px;
+	}
+	@media (max-width: $md4+px){
 		margin: -27px 0px 0px 0px;
 	}
 }
@@ -159,6 +166,7 @@ header{
 			img{
 				width: 150px;
 			}
+			margin: 0px -3px -10px 0px;
 		}
 		@media (max-width: $md4+px){
 			img{width: 100px;}
@@ -188,7 +196,7 @@ header{
 		&__icon{
 			display:block;
 			position: absolute;
-			top: 18px;
+			top: 30px;
 			left: 10px;
 			width: 30px;
 			height: 18px;
@@ -219,6 +227,14 @@ header{
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (max-width:$md4+px){
+	.header-menu{
+		&__icon{
+			top: 20px;
 		}
 	}
 }
