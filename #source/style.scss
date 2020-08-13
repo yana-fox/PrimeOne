@@ -227,6 +227,9 @@ $md4: 479.98;
 
 .why {
 	margin: 0px 0px 75px 0px;
+	@media (max-width: $md2+px){
+		margin: 0px 0px 30px 0px;
+	}
 }
 .why-top {
 	display: flex;
@@ -351,6 +354,9 @@ $md4: 479.98;
 	&__column {
 		flex: 0 0 50%;
 		margin: 0px 0px 20px 0px;
+		@media (max-width: $md2+px){
+			flex: 1 1 100%;
+		}
 	}
 
 	&__item {
@@ -385,16 +391,25 @@ $md4: 479.98;
 .contacts-content {
 	display: flex;
 	background-color: #000000;
+	@media (max-width: $md2+px){
+		display: block;
+	}
 	&__column {
 		flex: 0 0 50%;
 	}
 
 	&__map {
 		height: 100%;
+		@media (max-width: $md2+px){
+			height: 300px;
+		}
 	}
 }
 .contacts-content-form {
 	padding: 55px 60px;
+	@media (max-width: $md2+px){
+		padding: 30px;
+	}
 	&__title {
 		font-family: AkzidenzGrotesk-BoldCond;
 		text-transform: uppercase;
@@ -409,6 +424,9 @@ $md4: 479.98;
 }
 .contacts-content-form-body {
 	max-width: 375px;
+	@media (max-width: $md2+px){
+		max-width: none;
+	}
 }
 .contacts-content-form-line {
 	margin: 0px 0px 25px 0px;
