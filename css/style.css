@@ -921,13 +921,24 @@ header {
 }
 
 .contacts-content__map {
-  height: 100%;
+  overflow: hidden;
+  padding-bottom: 52%;
+  position: relative;
+  height: 300px;
 }
 
 @media (max-width: 767.98px) {
   .contacts-content__map {
     height: 300px;
   }
+}
+
+.contacts-content__map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .contacts-content-form {
