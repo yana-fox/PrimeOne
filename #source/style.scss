@@ -62,6 +62,9 @@ $md4: 479.98;
 	display: flex;
 	background-color: #000000;
 	margin: 0px 0px 75px 0px;
+	@media (max-width: $md2+px){
+		margin: 0px 0px 40px 0px;
+	}
 	&__column {
 		flex: 0 0 50%;
 		@media (max-width:$md2+px){
@@ -131,15 +134,27 @@ $md4: 479.98;
 
 //Стиль для блока Products
 .products{
-	padding: 0px 0px 40px 0px;
+	margin: 0px 0px 40px 0px;
+	@media (max-width: $md2+px){
+		margin: 0px 0px 0px 0px;
+	}
 
 	&__column {
 		flex: 0 0 25%;
 		padding: 0px 0px 40px 0px;
+		@media (max-width: $md2+px){
+			flex: 0 0 50%;
+		}
+		@media (max-width: 380px){
+			flex: 1 1 100%;
+		}
 	}
 }
 .products-body{
 	display: flex;
+	@media (max-width: $md2+px){
+		flex-wrap: wrap;
+	}
 }
 .products-item {
 
@@ -165,6 +180,11 @@ $md4: 479.98;
 		padding: 0px 10px 0px 7px;
 		height: 50px;
 		overflow: hidden;
+		@media (max-width: 380px){
+			max-width: none;
+			height: auto;
+			overflow: visible;
+		}
 	}
 
 	&__text {
@@ -177,11 +197,13 @@ $md4: 479.98;
 		display: block;
 		max-width: 204.5px;
 		padding: 0px 0px 0px 6px;
+		@media (max-width: 380px){
+			max-width: none;
+		}
 	}
 
 	&__btn {
 		margin: 0px 0px 25px 6px;
-		// padding: 0px 0px 0px 6px;
 	}
 
 	&__link {
