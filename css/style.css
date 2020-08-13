@@ -986,3 +986,43 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .footer-body {
+    height: auto;
+    padding: 15px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.footer__text {
+  font-family: 'PT Sans';
+  color: #4d4d4d;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer__text a {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+.footer__text a:hover {
+  text-decoration: none;
+}
