@@ -441,6 +441,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   background-color: #000000;
+  margin: 0px 0px 75px 0px;
 }
 
 .private__column {
@@ -524,4 +525,82 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   padding: 0px 0px 0px 12px;
+}
+
+.products {
+  padding: 0px 0px 40px 0px;
+}
+
+.products__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0px 0px 40px 0px;
+}
+
+.products-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.products-item__image {
+  display: block;
+  padding: 0px 0px 102% 0px;
+  margin: 0px 0px 23px 0px;
+}
+
+.products-item__title {
+  font-size: 25px;
+  font-family: AkzidenzGrotesk-BoldCond;
+  line-height: 25px;
+  letter-spacing: 2.5px;
+  margin: 0px 0px 26px 0px;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  max-width: 185px;
+  padding: 0px 10px 0px 7px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.products-item__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0px 0px 28px 0px;
+  display: block;
+  max-width: 204.5px;
+  padding: 0px 0px 0px 6px;
+}
+
+.products-item__btn {
+  margin: 0px 0px 25px 6px;
+}
+
+.products-item__link {
+  font-family: 'Bebas Neue';
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000000;
+  padding: 0px 0px 0px 9px;
 }

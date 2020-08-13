@@ -61,7 +61,7 @@ $md4: 479.98;
 .private {
 	display: flex;
 	background-color: #000000;
-	
+	margin: 0px 0px 75px 0px;
 	&__column {
 		flex: 0 0 50%;
 		@media (max-width:$md2+px){
@@ -128,4 +128,72 @@ $md4: 479.98;
 		padding: 0px 0px 0px 12px;
 	}
 }
+
+//Стиль для блока Products
+.products{
+	padding: 0px 0px 40px 0px;
+
+	&__column {
+		flex: 0 0 25%;
+		padding: 0px 0px 40px 0px;
+	}
+}
+.products-body{
+	display: flex;
+}
+.products-item {
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	&__image {
+		display: block;
+		padding: 0px 0px 102% 0px;
+		margin: 0px 0px 23px 0px;
+	}
+
+	&__title {
+		font-size: 25px;
+		font-family: AkzidenzGrotesk-BoldCond;
+		line-height: 25px;
+		letter-spacing: 2.5px;
+		margin: 0px 0px 26px 0px;
+		color: #000000;
+		text-transform: uppercase;
+		display: block;
+		max-width: 185px;
+		padding: 0px 10px 0px 7px;
+		height: 50px;
+		overflow: hidden;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		font-family: $fontfamily;
+		font-size: 15px;
+		line-height: 25px;
+		color: #000000;
+		margin: 0px 0px 28px 0px;
+		display: block;
+		max-width: 204.5px;
+		padding: 0px 0px 0px 6px;
+	}
+
+	&__btn {
+		margin: 0px 0px 25px 6px;
+		// padding: 0px 0px 0px 6px;
+	}
+
+	&__link {
+		font-family: 'Bebas Neue';
+		font-size: 19px;
+		line-height: 25px;
+		letter-spacing: 1.9px;
+		text-transform: uppercase;
+		text-decoration: underline;
+		color: #000000;
+		padding: 0px 0px 0px 9px;
+	}
+}
+
 
