@@ -226,6 +226,7 @@ $md4: 479.98;
 //Стили для блока Why
 
 .why {
+	margin: 0px 0px 75px 0px;
 }
 .why-top {
 	display: flex;
@@ -328,6 +329,114 @@ $md4: 479.98;
 		line-height: 25px;
 	}
 }
+
+//Стиль для блока Contacts
+.contacts {
+}
+.contacts-top {
+
+	&__title {
+		font-family: AkzidenzGrotesk-BoldCond;
+		font-size: 50px;
+		line-height: 25px;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		margin: 0px 0px 30px 0px;
+	}
+}
+
+.contacts-top-body {
+	display: flex;
+	flex-wrap: wrap;
+	&__column {
+		flex: 0 0 50%;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__item {
+		font-size: 15px;
+		color: #000000;
+		padding: 0px 0px 0px 35px;
+		line-height: 27px;
+		display: inline-block;
+	}
+
+	&__item--1 {
+		background: url('../img/contacts/01.png') left no-repeat;
+	}
+
+	&__item--2 {
+		background: url('../img/contacts/02.png') left no-repeat;
+	}
+
+	&__item--3 {
+		background: url('../img/contacts/03.png') left no-repeat;
+	}
+}
+.contacts-top-body-social {
+	display: flex;
+	&__item {
+		margin: 0px 30px 0px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+	}
+}
+.contacts-content {
+	display: flex;
+	background-color: #000000;
+	&__column {
+		flex: 0 0 50%;
+	}
+
+	&__map {
+		height: 100%;
+	}
+}
+.contacts-content-form {
+	padding: 55px 60px;
+	&__title {
+		font-family: AkzidenzGrotesk-BoldCond;
+		text-transform: uppercase;
+		color: #ffffff;
+		font-size: 25px;
+		letter-spacing: 5px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__btn {
+	}
+}
+.contacts-content-form-body {
+	max-width: 375px;
+}
+.contacts-content-form-line {
+	margin: 0px 0px 25px 0px;
+}
+.input {
+	border-radius: 0 !important;
+	width: 100%;
+	display: block;
+	padding: 0px 18px;
+	border: 2px solid #959595;
+	background-color: #252525;
+	height: 50px;
+	color: #959595;
+	font-size: 15px;
+	font-family: $fontfamily;
+
+}
+textarea.input{
+	resize: none;
+	padding: 10px 18px;
+	height: 100px;
+}
+textarea{
+	-webkit-appearance: none;
+	-moz-appearance: none
+}
+
+
 
 
 
