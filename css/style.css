@@ -596,6 +596,12 @@ header {
   margin: 0px 0px 23px 0px;
 }
 
+@media (max-width: 380px) {
+  .products-item__image {
+    margin: 0px 0px 13px 0px;
+  }
+}
+
 .products-item__title {
   font-size: 25px;
   font-family: AkzidenzGrotesk-BoldCond;
@@ -616,6 +622,7 @@ header {
     max-width: none;
     height: auto;
     overflow: visible;
+    margin: 0px 0px 16px 0px;
   }
 }
 
@@ -636,6 +643,7 @@ header {
 @media (max-width: 380px) {
   .products-item__text {
     max-width: none;
+    margin: 0px 0px 18px 0px;
   }
 }
 
